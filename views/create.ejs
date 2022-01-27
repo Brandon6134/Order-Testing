@@ -1,0 +1,33 @@
+<html lang="en">
+    <%- include('./partials/nav.ejs') %>
+    <form action="/orders" method="POST">
+        <h1>Enter a new order</h1>
+        <br/>
+        <br/>
+        <label>ID:</label>
+        <input type="text" id="_id" name = "_id">
+        <br/>
+        <br/>
+        <label>Customer: </label>
+        <input type="text" id="customer" name = "customer">
+        <br/>
+        <br/>
+        <label>Signode Product: </label>
+        <input type="text" id="sig_prod" name = "sig_prod">
+        <br/>
+        <br/>
+        <label>Description: </label>
+        <input type="text" id="desc" name = "desc">
+        <br/>
+        <br/>
+        <label>Category: </label>
+        <input type="text" id="category" name = "category">
+        <br/>
+        <br/>
+        <label>Order Category: </label>
+        <input type="text" id="order_category" name = "order_category">
+        <br/>
+        <br/>
+        <button>Submit</button>
+    </form>
+</html>

@@ -1,0 +1,46 @@
+[{
+    "_id": "1",
+    "customer": 11,
+    "name": "disc",
+    "sig_prod": "1A",
+    "desc": "1 1/4 X 029 Magnus RW Zinc 20 coils/skid",
+    "category": "1200-Magnus",
+    "order_category": "consumables"
+  },
+  {
+    "_id": "2",
+    "customer": 22,
+    "name": "misc",
+    "sig_prod": "2A",
+    "desc": "1 1/4 X 029 Magnus RW Zinc 20 coils/skid",
+    "category": "1200-Magnus",
+    "order_category": "consumables"
+  },
+  {
+    "_id": "3",
+    "customer": 33,
+    "name": "risc",
+    "sig_prod": "3A",
+    "desc": "1 1/4 X 029 Magnus RW Zinc 20 coils/skid",
+    "category": "1200-Magnus",
+    "order_category": "consumables"
+  },
+  {
+    "_id": "4",
+    "customer": 44,
+    "name": "bisc",
+    "sig_prod": "4A",
+    "desc": "1 1/4 X 029 Magnus RW Zinc 20 coils/skid",
+    "category": "1200-Magnus",
+    "order_category": "consumables"
+  },
+  {
+    "_id": "5",
+    "customer": 55,
+    "name": "lisc",
+    "sig_prod": "5A",
+    "desc": "1 1/4 X 029 Magnus RW Zinc 20 coils/skid",
+    "category": "1200-Magnus",
+    "order_category": "consumables"
+  }
+]

@@ -1,0 +1,26 @@
+<html lang="en">
+    <%- include('./partials/nav.ejs') %>
+    <div>
+        <h1>Order Details</h1>
+        <p class="name">ID: <%=order._id%></p>
+        <p class="description">Description: <%=order.customer%></p>
+        <p>Signode Product: <%=order.sig_prod%></p>
+        <p>Order Description: <%=order.desc%></p>
+        <p>Category: <%=order.category%></p>
+        <p>Order Category: <%=order.order_category%></p>
+        <a class="delete" data-doc="<%=order._id%>">Delete Order</a>
+    </div>
+
+    <script>
+        const trashcan = document.querySelector("a.delete");
+        trashcan.addEventListener('click', (e) => {
+            const endpoint = `/orders/${trashcan.dataset.doc}`;
+            fetch(endpoint, {
+                method: 'DELETE'
+            })
+            .then((response) => response.json())
+            .then((data) => window.location.href = data.redirect)
+            .catch (err => console.log(err))
+        })
+    </script>
+</html>

@@ -1,0 +1,24 @@
+<html lang="en">
+    <%- include('./partials/nav.ejs') %>
+    <!--  always use the - sign for include> -->
+    <div>
+        <h1>Welcome to the Managing Orders Site</h1>
+        <% if (orders.length >0) { %>
+            <% orders.forEach(orders => { %>
+                <h3>Order Details</h3>
+                <div class="order">
+                <a class="single" href="/orders/<%= orders._id %>">
+                    <p class="name">ID: <%=orders._id%></p>
+                    <p class="description">Description: <%=orders.customer%></p>
+                    <p>Signode Product: <%=orders.sig_prod%></p>
+                    <p>Order Description: <%=orders.desc%></p>
+                    <p>Category: <%=orders.category%></p>
+                    <p>Order Category: <%=orders.order_category%></p>
+                </a>
+            </div>
+                <br/>
+           <% }) %>
+      <%  } %>
+
+    </div>
+</html>
